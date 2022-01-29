@@ -104,11 +104,17 @@ body {
 }
 
 #meal{
-    margin: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .meal-item{
     border-radius: 20px;
+    margin: 20px 20px;
     overflow: hidden;
     width: 307px;
     box-shadow: 0 4px 21px -12px rgb(8 8 8);
@@ -136,4 +142,110 @@ body {
 
 .recipe-btn:hover{
     background: rgb(172, 42, 19);
+}
+
+
+/* MEAL DETAILS CARD */
+
+.details-main{
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+}
+
+.meal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background: tomato;
+    border-radius: 20px;
+    width: 60%;
+    height: 95%;
+    overflow: hidden;
+    padding: 30px 0;
+    display: none;
+    box-shadow: 0 0 30px black;
+}
+
+/* JAVASCRIPT TOGGLE */
+
+.showRecipe{
+    display: block;
+}
+
+.recipe-close-btn{
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    font-size: 1.8rem;
+    background: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-title{
+    padding: 40px 0;
+}
+
+.recipe-category{
+    background: white;
+    color: tomato;
+    font-weight: 600;
+    display: inline-block;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.recipe-instruction{
+    width: 80%;
+    margin: 23px auto;
+}
+
+.recipe-instruction p{
+    text-align: start;
+    padding-top: 20px;
+}
+
+.recipe-meal-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+}
+
+.recipe-link{
+    margin: 10px 0;
+}
+
+.recipe-link a{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+.recipe-link a:hover{
+    opacity: 0.7;
+    color: black;
+}
+
+/* NOT FOUND  */
+
+.notFound{
+    color: tomato;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
 }
