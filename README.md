@@ -10,6 +10,8 @@ When you get all data from Api click on the get Recipe button it will open a Mod
 
 when you click on that watch video button it has a functionality that the video will be opened on other tab of your browser.
 
+When you type a wrong name it says "sorry we did'nt find any meal"
+
 And can close the modal by a close button on top right.
 
 Project is fully responsive and can be used in mobile view.
