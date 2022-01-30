@@ -84,6 +84,7 @@ body {
     font-size: 20px;
     border-radius: 50%;
     border: none;
+    outline: none;
     background: rgb(255 255 255 / 8%);
     color: tomato;
 }
@@ -168,17 +169,12 @@ body {
     border-radius: 20px;
     width: 60%;
     height: 95%;
-    overflow: hidden;
+    overflow-y: scroll;
     padding: 30px 0;
     display: none;
     box-shadow: 0 0 30px black;
 }
 
-/* JAVASCRIPT TOGGLE */
-
-.showRecipe{
-    display: block;
-}
 
 .recipe-close-btn{
     position: absolute;
@@ -248,4 +244,11 @@ body {
     font-size: 20px;
     font-weight: 600;
     width: 100%;
+}
+
+
+/* JAVASCRIPT TOGGLE */
+
+.showRecipe{
+    display: block;
 }
