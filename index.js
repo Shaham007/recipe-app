@@ -41,7 +41,7 @@ function getMealList(){
                         </div>
                         <div class="meal-name">
                             <h3>${meal.strMeal}</h3>
-                            <a href="#" class="recipe-btn">Get Recipe</a>
+                            <a href="#" class="recipe-btn">Show info</a>
                         </div>
                     </div>
                 `;
