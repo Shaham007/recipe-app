@@ -33,7 +33,7 @@ function getMealList(){
     .then(data => {
         let html = "";
         if(data.meals){
-            data.meals.forEach(meal => {
+            data.meals.map(meal => {
                 html += `
                     <div class="meal-item" data-id = "${meal.idMeal}">
                         <div class="meal-img">
